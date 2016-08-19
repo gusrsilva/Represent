@@ -1,0 +1,60 @@
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/holder"
+    app:layout_box="bottom"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/background"/>
+
+        <android.support.wearable.view.CardFrame
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:layout_box="bottom"
+            android:id="@+id/cardFrame"
+            android:layout_width="fill_parent">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom">
+
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Representative"
+                    android:textColor="@android:color/secondary_text_dark"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:id="@+id/type" />
+
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Dianne Feinstein"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:id="@+id/name"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Republican"
+                    android:textColor="@android:color/secondary_text_dark"
+                    android:textSize="10sp"
+                    android:id="@+id/party"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </android.support.wearable.view.CardFrame>
+</android.support.wearable.view.BoxInsetLayout>

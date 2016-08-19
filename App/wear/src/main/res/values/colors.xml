@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dem_blue">#2F80ED</color>
+    <color name="rep_red">#EB5757</color>
+
+    <color name="textWhitePrimary">#ffffffff</color>
+    <color name="textWhiteSecondary">#77ffffff</color>
+</resources>

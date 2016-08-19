@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/card_elevation"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:id="@+id/rep_image"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/def"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Senator"
+                        android:id="@+id/rep_type"
+                        android:fontFamily="sans-serif-condensed-thin"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Barbara Boxer"
+                        android:id="@+id/name"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:textSize="30sp"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Democrat"
+                        android:id="@+id/party"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="14sp"
+                        android:textColor="#bb000000" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sen.Boxer@opencongress.org"
+                        android:autoLink="email"
+                        android:id="@+id/email"
+                        android:fontFamily="sans-serif-condensed-bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/dem_blue"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:text="https://www.boxer.senate.gov"
+                        android:id="@+id/website"
+                        android:fontFamily="sans-serif-condensed-bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/dem_blue"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/latest_tweet"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latest Tweet:"
+                    android:fontFamily="sans-serif-thin"
+                    android:textSize="12sp"
+                    android:padding="10dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/tweet_border"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tweet_holder"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MORE INFO"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_gravity="end"
+                android:textColor="@color/dem_blue"
+                android:id="@+id/more_info"
+                android:onClick="moreInfoPressed"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
